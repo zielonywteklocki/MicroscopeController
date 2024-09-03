@@ -89,8 +89,8 @@ void MainWindow::on_actionComPortProperties_triggered()
 }
 
 void MainWindow::on_actionComPortSendMessage_triggered(){
-    ComPortSendMessageWindow comPortSendMessageWindow(this);
-    comPortSendMessageWindow.setModal(true);
+    ComPortSendMessageWindow comPortSendMessageWindow(this, serialPortPtr);
+    comPortSendMessageWindow.setModal(false);
     comPortSendMessageWindow.exec();
 }
 

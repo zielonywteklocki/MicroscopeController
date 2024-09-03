@@ -14,11 +14,54 @@
    <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QPushButton" name="pushButton">
+   <item row="6" column="0">
+    <widget class="QLineEdit" name="leMessageToSend"/>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="pbSendMessage">
      <property name="text">
       <string>Send</string>
      </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Data received:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="pbClearScreen">
+     <property name="text">
+      <string>Clear screen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" rowspan="2">
+    <widget class="QTextEdit" name="tEMessagesReceived"/>
+   </item>
+   <item row="0" column="0" rowspan="3">
+    <widget class="QGroupBox" name="grpBxSendProp">
+     <property name="title">
+      <string>Attach</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="cbCarriageReturn">
+        <property name="text">
+         <string>&quot;\r&quot;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cbNewLine">
+        <property name="text">
+         <string>&quot;\n&quot;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>

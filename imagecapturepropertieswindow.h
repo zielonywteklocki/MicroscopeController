@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QImageCapture>
 
+
 namespace Ui {
 class ImageCapturePropertiesWindow;
 }
